@@ -123,3 +123,51 @@ header .top-nav .cart_header .count_item{
 header .top-nav .cart_header .tottal_price{
     margin-bottom: 8px;
 }
+ header nav{
+    border: 1px solid var(--border-color);
+    display: flex;
+}
+nav .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header .links ul{
+    display: flex;
+    gap: 70px;
+}
+nav .links ul li a{
+    text-transform: capitalize;
+    color: var(--dark-color);
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+header .links ul li{
+    position: relative;
+    padding: 20px 0;
+}
+header .links ul li::after{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2%;
+    background: var(--main-color);
+    transition: 0.4s ease-in-out;  
+}
+header .links ul li.active::after,
+header .links ul li:hover::after{
+    width: 100%;
+}
+header .links .loging_singnup a{
+    color: var(--dark-color);
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    margin-left: 10px;
+    border: 5px;
+
+}
+
